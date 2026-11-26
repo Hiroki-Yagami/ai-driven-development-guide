@@ -17,13 +17,13 @@
 
 **ミサキ**：「ユイさん、この内容をそのままAIエージェントに投げて画面を作ってみましょうか？」
 
-**サトウ**：「ちょっと待って、ミサキくん。そのままだとAIが勝手に想像して、欲しくもない機能まで大量に作ってしまうよ。AI駆動開発では、実装より先に厳密な仕様書を作って唯一の正とする**仕様駆動開発（SDD: Spec-Driven Development）**が基本なんだ」
+**サトウ**：「ちょっと待って、ミサキくん。そのままだとAIが勝手に想像して、欲しくもない機能まで大量に作ってしまうよ。AI駆動開発では、実装より先に厳密な仕様書を作って唯一の正とする**仕様駆動開発（SDD: Spec-Driven Development）** が基本なんだ」
 
-**ユイ**：「たしかに！まずは解決すべき課題の本質を整理した**問題定義書（Problem Statement）**と、プロダクト全体の目的・対象ユーザー・成功指標をまとめた**要件定義書（PRD: Product Requirements Document）**から固めましょう」
+**ユイ**：「たしかに！まずは解決すべき課題の本質を整理した**問題定義書（Problem Statement）** と、プロダクト全体の目的・対象ユーザー・成功指標をまとめた**要件定義書（PRD: Product Requirements Document）** から固めましょう」
 
-**サトウ**：「いいね。しかも『高速に』『使いやすく』みたいな主観的な言葉はAIが一番誤解するポイントだから、数値や条件に置き換える**曖昧さ排除（Disambiguation）**を徹底しよう。たとえば『When / While / If〜then』の定型構文で書く**EARS記法（Easy Approach to Requirements Syntax）**を使うと、AIの解釈ブレが一気に減るよ」
+**サトウ**：「いいね。しかも『高速に』『使いやすく』みたいな主観的な言葉はAIが一番誤解するポイントだから、数値や条件に置き換える**曖昧さ排除（Disambiguation）** を徹底しよう。たとえば『When / While / If〜then』の定型構文で書く**EARS記法（Easy Approach to Requirements Syntax）** を使うと、AIの解釈ブレが一気に減るよ」
 
-**ミサキ**：「なるほど！システムが提供する具体的な振る舞いの**機能要件（Functional Requirements）**だけじゃなく、応答速度などの**パフォーマンス要件（Performance Requirements）**や認証・暗号化などの**セキュリティ要件（Security Requirements）**といった**非機能要件（Non-Functional Requirements）**も最初に明文化しておくべきですね」
+**ミサキ**：「なるほど！システムが提供する具体的な振る舞いの**機能要件（Functional Requirements）** だけじゃなく、応答速度などの**パフォーマンス要件（Performance Requirements）** や認証・暗号化などの**セキュリティ要件（Security Requirements）** といった**非機能要件（Non-Functional Requirements）** も最初に明文化しておくべきですね」
 
 ---
 
@@ -33,13 +33,13 @@
 
 **ユイ**：「これもあれも欲しいけど、全部入れるとリリースが半年先になっちゃいますね……」
 
-**サトウ**：「合意なく要件が膨張する**スコープクリープ（Scope Creep）**を防ぐために、まずは**スコープ定義（Scope Definition）**をして、今回は意図的に作らない**アウトオブスコープ（Out of Scope）**をはっきり宣言しよう。そうしないとAIが親切心で余計な機能まで実装してしまうんだ」
+**サトウ**：「合意なく要件が膨張する**スコープクリープ（Scope Creep）** を防ぐために、まずは**スコープ定義（Scope Definition）** をして、今回は意図的に作らない**アウトオブスコープ（Out of Scope）** をはっきり宣言しよう。そうしないとAIが親切心で余計な機能まで実装してしまうんだ」
 
-**ユイ**：「では、Must・Should・Could・Won'tで分ける**MoSCoW法**で優先度を切って、仮説検証に必要な最小限の**MVP（Minimum Viable Product）**に絞り込みましょう。各機能は『誰が・何を・なぜ求めるか』の**ユーザーストーリー（User Story）**で書きますね」
+**ユイ**：「では、Must・Should・Could・Won'tで分ける**MoSCoW法**で優先度を切って、仮説検証に必要な最小限の**MVP（Minimum Viable Product）** に絞り込みましょう。各機能は『誰が・何を・なぜ求めるか』の**ユーザーストーリー（User Story）** で書きますね」
 
-**ミサキ**：「そのストーリーが完了したと判断するための**受け入れ基準（Acceptance Criteria）**は、前提・操作・期待結果を整理する**Given-When-Then記法**で書いておけば、そのまま**振る舞い駆動開発（BDD: Behavior-Driven Development）**の**実行可能仕様（Executable Specification）**としてAIのテスト生成にも使えますね！」
+**ミサキ**：「そのストーリーが完了したと判断するための**受け入れ基準（Acceptance Criteria）** は、前提・操作・期待結果を整理する**Given-When-Then記法**で書いておけば、そのまま**振る舞い駆動開発（BDD: Behavior-Driven Development）** の**実行可能仕様（Executable Specification）** としてAIのテスト生成にも使えますね！」
 
-**サトウ**：「素晴らしい気づきだね。しかも**契約ファースト開発（Contract-First Development）**でOpenAPIスキーマを先に確定する**仕様ファースト（Spec-First）**にしておけば、フロントエンドとバックエンドをAIに並行実装させても噛み合わなくなる心配がないよ」
+**サトウ**：「素晴らしい気づきだね。しかも**契約ファースト開発（Contract-First Development）** でOpenAPIスキーマを先に確定する**仕様ファースト（Spec-First）** にしておけば、フロントエンドとバックエンドをAIに並行実装させても噛み合わなくなる心配がないよ」
 
 ---
 
@@ -47,11 +47,11 @@
 
 基本フローの仕様書が形になったところで、サトウが鋭い指摘を入れた。
 
-**サトウ**：「通常フローはきれいだけど、AIが一番バグを生みやすいのは『想定外の入力』なんだ。極端な入力値の**エッジケース（Edge Case）**や、複数条件が同時に重なる**コーナーケース（Corner Case）**、ネットワーク障害時の**異常系要件（Exception Handling Requirements）**、そして金額0円や文字数上限などの**境界値条件（Boundary Condition）**を必ず書き出そう」
+**サトウ**：「通常フローはきれいだけど、AIが一番バグを生みやすいのは『想定外の入力』なんだ。極端な入力値の**エッジケース（Edge Case）** や、複数条件が同時に重なる**コーナーケース（Corner Case）**、ネットワーク障害時の**異常系要件（Exception Handling Requirements）**、そして金額0円や文字数上限などの**境界値条件（Boundary Condition）** を必ず書き出そう」
 
 **ミサキ**：「請求書のステータスって『下書き→発行済→入金済→取消』みたいに複雑ですよね。文章だけだと抜け漏れそうです」
 
-**サトウ**：「そういうときは、全状態と禁止遷移を網羅する**状態遷移表（State Transition Table）**や、複数条件と動作を表にした**決定表（Decision Table）**を使うんだ。さらにプロジェクト固有の言葉のズレを防ぐ**用語集（Glossary）**と、項目の型や桁数を統一する**データ辞書（Data Dictionary）**を揃えておけば、AIの用語混同も防げるよ」
+**サトウ**：「そういうときは、全状態と禁止遷移を網羅する**状態遷移表（State Transition Table）** や、複数条件と動作を表にした**決定表（Decision Table）** を使うんだ。さらにプロジェクト固有の言葉のズレを防ぐ**用語集（Glossary）** と、項目の型や桁数を統一する**データ辞書（Data Dictionary）** を揃えておけば、AIの用語混同も防げるよ」
 
 ---
 
@@ -61,11 +61,11 @@
 
 **ミサキ**：「仕様書がすごく充実しましたけど、これを丸ごとAIに渡して『全部実装して』と頼むのは大きすぎますよね？」
 
-**サトウ**：「その通り。AIが1回のタスクで正確に処理できるようにする**要件の粒度設計（Requirements Granularity）**と**タスク分解（Task Decomposition）**が腕の見せどころだよ。画面層・API層・DB層でバラバラに作る**横切り分割（Horizontal Slicing）**よりも、UIからDBまで1機能分を薄く貫通させる**縦切り分割（Vertical Slicing）**のほうが、毎回動く状態で検証できて安全なんだ」
+**サトウ**：「その通り。AIが1回のタスクで正確に処理できるようにする**要件の粒度設計（Requirements Granularity）** と**タスク分解（Task Decomposition）** が腕の見せどころだよ。画面層・API層・DB層でバラバラに作る**横切り分割（Horizontal Slicing）** よりも、UIからDBまで1機能分を薄く貫通させる**縦切り分割（Vertical Slicing）** のほうが、毎回動く状態で検証できて安全なんだ」
 
-**ユイ**：「着手できる準備が整ったかを点検する**Definition of Ready（DoR）**と、完了時の品質基準である**Definition of Done（DoD）**もチームで揃えておきましょう。リリース後の効果測定に使う**成功指標（Success Metrics / KPI）**と、悪化させてはいけない防衛ラインの**ガードレールメトリクス（Guardrail Metrics）**も追記しておきます」
+**ユイ**：「着手できる準備が整ったかを点検する**Definition of Ready（DoR）** と、完了時の品質基準である**Definition of Done（DoD）** もチームで揃えておきましょう。リリース後の効果測定に使う**成功指標（Success Metrics / KPI）** と、悪化させてはいけない防衛ラインの**ガードレールメトリクス（Guardrail Metrics）** も追記しておきます」
 
-**サトウ**：「最後に一番大事なこと。実装だけが進んで仕様書が古くなる**仕様ドリフト（Spec Drift）**を防ぐために、仕様の正本を1か所に集約する**仕様の単一情報源（SSOT: Single Source of Truth）**を徹底し、コードやテストと連動して更新され続ける**リビングドキュメント（Living Documentation）**として育てていこう。要件IDでコードとテストを紐づける**要件トレーサビリティ（Requirements Traceability）**が効いていれば、変更時の**影響範囲分析（Impact Analysis）**もAIが一瞬でやってくれるよ」
+**サトウ**：「最後に一番大事なこと。実装だけが進んで仕様書が古くなる**仕様ドリフト（Spec Drift）** を防ぐために、仕様の正本を1か所に集約する**仕様の単一情報源（SSOT: Single Source of Truth）** を徹底し、コードやテストと連動して更新され続ける**リビングドキュメント（Living Documentation）** として育てていこう。要件IDでコードとテストを紐づける**要件トレーサビリティ（Requirements Traceability）** が効いていれば、変更時の**影響範囲分析（Impact Analysis）** もAIが一瞬でやってくれるよ」
 
 ---
 
